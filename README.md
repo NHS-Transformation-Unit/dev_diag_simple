@@ -10,7 +10,7 @@ The structure of the repository is detailed below:
 
 ``` plaintext
 
-├───run_app.R
+├───app.R
 ├───README.md
 ├───LICENSE
 ├───.gitignore
@@ -23,7 +23,7 @@ The structure of the repository is detailed below:
 
 ```
 
-- `runn_app.R`: Runs the shiny app.
+- `app.R`: Runs the shiny app.
 - `README.md`: This file containing an overview and instructions for using the repository.
 - `LICENSE`: License information for the repository.
 - `.gitignore`: Specifies the files and folders that are ignored (not tracked) in the repository.
