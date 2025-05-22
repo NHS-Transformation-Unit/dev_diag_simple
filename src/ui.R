@@ -9,14 +9,14 @@ shinyUI(navbarPage("Diagnostic Pathway Simulator",
                               h2("Welcome to the Diagnostic Pathway Simulation App"),
                               hr(),
                               p("We have created this simulation app of a simple diagnostic pathway as an example 
-                                of how the ", strong("Transformation Unit"), "can support demand and capacity modelling within diagnostics. 
+                                of how the ", strong(a("Transformation Unit", href = "https://transformationunit.nhs.uk/", target = "_blank")), "can support demand and capacity modelling within diagnostics. 
                                 Please explore the app to understand how changes in demand and ring-fencing capacity can impact on the size 
                                 of waiting times. For the purposes of this demonstration, the diagnostic pathway is fairly simple. However, it includes 
                                 real world constraints that would need to be considered when modelling any pathway."),
                               br(),
                               h3("What does the pathway look like?"),
                               hr(),
-                              p("THe diagnostic pathway involves:"),
+                              p("The diagnostic pathway involves:"),
                               tags$ul(
                                 tags$li("Patients are referred into the service for a planned investigation"),
                                 tags$li("A minimum waiting time is applied to each patient to account for the time required to contact them"),
@@ -26,6 +26,9 @@ shinyUI(navbarPage("Diagnostic Pathway Simulator",
                                 tags$li("If there is not enough emergency capacity then planned capacity will be utilised to accommodate 
                                         these patients.")
                               ),
+                              br(),
+                              p("The pathway is demonstrated in the diagram below:"),
+                              img(src = "images/pathway.drawio.png"),
                               br(),
                               h3("How to run the model"),
                               hr(),
@@ -61,7 +64,8 @@ shinyUI(navbarPage("Diagnostic Pathway Simulator",
                               h3("Want to know more?"),
                               hr(),
                               p("If you would like to know more about how demand and capacity modelling can support the re-design 
-                                of diagnostic pathways please contact ", a("Andy Wilson", href = "mailto:andy.wilson8@nhs.net"))
+                                of diagnostic pathways please contact ", a("Andy Wilson.", href = "mailto:andy.wilson8@nhs.net")),
+                              p("Alternatively, for more information about our wider diagnostic offer please contact ", a("Sarah Rigg.", href = "mailto: sarah.rigg4@nhs.net"))
                             )
                    ),
                    
